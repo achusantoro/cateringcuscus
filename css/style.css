@@ -1,0 +1,219 @@
+/* Paleta de colores 
+beige 1 #EDEAE3 
+beige 2 #D4CCBB 
+beige 3 #BBA670 
+casi negro #3D3D3D */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arvo', serif;
+  color: #3D3D3D;
+  margin: 10px 0px; }
+
+p {
+  line-height: 1.5;
+  color: #3D3D3D;
+  font-weight: 400;
+  margin: 10px 0px;
+  font-size: 16px; }
+
+a {
+  color: #BBA670;
+  text-decoration: none; }
+  a:hover {
+    color: #BBA670;
+    text-decoration: underline; }
+
+li {
+  list-style: none; }
+
+header {
+  padding: 20px;
+  text-align: center; }
+  header #logoNav {
+    height: 100px;
+    text-align: center;
+    margin: 30px; }
+  header nav {
+    bottom: 70px;
+    text-align: center; }
+    header nav li {
+      list-style: none;
+      display: inline-block;
+      padding: 30px; }
+    header nav a {
+      font-weight: 500;
+      color: #3D3D3D; }
+      header nav a:active {
+        color: #BBA670;
+        text-decoration: underline; }
+
+main .presentacion {
+  display: block;
+  text-align: left; }
+  main .presentacion div {
+    position: relative;
+    z-index: 1; }
+  main .presentacion img {
+    margin: 20px 0px;
+    transform: translate(-40px, 70px); }
+
+main .catering, main .almacen {
+  margin: 30px;
+  text-align: center; }
+
+.cabecera {
+  position: relative;
+  width: 100%; }
+
+.aclaracion {
+  font-style: italic;
+  font-size: 11px;
+  margin-top: -20px; }
+
+.grillaFotos {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center; }
+  .grillaFotos img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 50px;
+    filter: grayscale(100%);
+    transition: all 1s; }
+  .grillaFotos img:hover {
+    width: 500px;
+    height: 500px;
+    filter: grayscale(0%); }
+
+#botonFinal {
+  text-align: center; }
+
+.faqs div {
+  margin: 50px 100px; }
+
+.faqs h3 {
+  margin: 40px;
+  text-align: center; }
+
+.contacto_texto {
+  text-align: center;
+  margin-top: 100px; }
+
+.enlaces {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 50px; }
+  .enlaces div {
+    margin: 8px; }
+
+/* FORMULARIO */
+#formularioCatering {
+  text-align: center;
+  margin: 30px 0px; }
+
+.tituloForm {
+  padding-top: 50px;
+  padding-bottom: 20px; }
+
+.estiloForm {
+  display: block;
+  margin-top: 20px;
+  padding-top: 20px; }
+
+input, textarea {
+  padding-bottom: 10px;
+  padding-right: 300px;
+  margin-bottom: 20px; }
+
+textarea {
+  padding-bottom: 50px; }
+
+button {
+  font-size: 14px;
+  color: #3D3D3D;
+  background-color: #D4CCBB;
+  border-radius: 10px;
+  padding: 10px 18px;
+  border: none;
+  margin: 15px 0px; }
+
+.botonSend {
+  color: #EDEAE3;
+  background-color: #BBA670;
+  border-radius: 10px;
+  padding: 10px 18px;
+  border: none;
+  margin: 15px 0px; }
+
+.buttonMenu {
+  color: #3D3D3D;
+  border-radius: 10px;
+  border: #3D3D3D solid 0.5px;
+  background-color: white; }
+
+/* FOOTER */
+footer {
+  height: 200px;
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: #EDEAE3;
+  margin: 0; }
+
+/* MEDIA QUERIES */
+@media (max-width: 320px) {
+  p {
+    font-size: 12px;
+    margin: 20px; }
+  .presentacion, .faqs {
+    margin: 10px;
+    text-align: left; }
+  .grillaFotos img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 5px;
+    filter: grayscale(0%); }
+  .aclaracion {
+    font-size: 9px; }
+  input, textarea {
+    padding-right: 80px; }
+  .cabecera_titulo {
+    visibility: hidden; } }
+
+@media (max-width: 425px) {
+  input, textarea {
+    padding-right: 80px; } }
+
+@media (max-width: 768px) {
+  p, h1, h2, h3, h4, h5, h6 {
+    margin: 20px; } }
+
+.presentacion {
+  margin: 20px; }
+
+.grillaFotos img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 10px;
+  filter: grayscale(0%); }
+
+@media (min-width: 769px) {
+  .presentacion {
+    margin: 20px 300px; } }
+
+@media (max-width: 850px) {
+  nav ul {
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 10px; } }
